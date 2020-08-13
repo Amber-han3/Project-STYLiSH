@@ -1,0 +1,569 @@
+/*product頁面使用的RWD*/
+
+@media (min-width: 1024px) {	
+
+/*搜尋框*/
+
+.searchbox{
+	width: 200px;
+}
+
+#search-pc{
+	position:absolute;
+	top:5px;
+ 	right:75px;
+	z-index: 1;
+}
+
+#searchicon-pc{
+/*	display:none;*/
+	position:absolute;
+	top:10px;
+ 	right: 90px;
+	z-index: 2;
+}
+
+#searchicon-m{
+	display:none;
+}
+
+#search-m{
+	display:none;
+}
+
+/*加入購物車*/
+
+.addToCartM{
+	display:none;
+}
+
+/*懸浮置底*/
+
+.stickybar{
+	display:none;
+}
+
+/*footer*/
+
+.aboutlinkcontrol{
+	display:flex;
+	width: 60%
+}
+
+.aboutlinks{
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+.socialiconcontrol{
+	display:flex;
+	width: 15%;
+}
+
+.copyrightcontrol{
+	display:flex;
+	width: 20%;
+}
+
+.copyright {
+	margin-top: 20px;
+}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+/*搜尋框*/
+
+.searchicon{
+	/*display: none;*/
+}
+
+.searchbox{
+	width: 150px;
+}
+
+#search-pc{
+
+	position:absolute;
+	top:5px;
+ 	right:75px; 
+	z-index: 1;
+}
+
+#searchicon-pc{
+	position:absolute;
+	top:10px;
+ 	right:90px;
+	z-index: 2;
+}
+
+#search-m{
+	display:none;
+}
+
+#searchicon-m{
+	display:none;
+}
+
+/*規格資訊位置*/
+
+.productSpec{
+	max-width: 800px;
+	justify-content: center;
+	margin-left: 30px;
+}
+
+/*標題資訊*/
+
+.nameTtile{
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+
+.namePDID{
+	margin-bottom: 12px;
+}
+
+/*色票*/
+
+.colorLine{
+	margin-bottom: 20px;
+}
+
+/*尺寸圓形圖*/
+
+.sizeLine{
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+/*數量選擇*/
+
+.numberLine{
+	margin-bottom: 18px;
+}
+
+.numberSelect{
+	height: 25px;
+}
+
+.numberInBox{
+	font-size: 18px;
+}
+
+/*加入購物車*/
+
+.addToCartM{
+	display:none;
+}
+
+/*產地跟材質說明*/
+
+.originText{
+	margin: 20px 0px;
+	font-size: 16px;
+	letter-spacing: 1px;
+}
+
+/*浮動置底*/
+
+.stickybar{
+	display:none;
+}
+
+
+/*footer*/
+
+.allfooter { 
+	height: 140px;
+}
+
+
+.aboutlinkcontrol{
+	width: 70%
+}
+
+.socialiconcontrol{
+	display:flex;
+	width: 25%;
+}
+
+.copyrightcontrol{
+	display:flex;
+	justify-content: center;
+	width: 100%;
+/*	flex-wrap: nowrap;*/
+}
+
+
+}
+
+@media (max-width: 767px) {
+
+/*控制header內的東西*/
+
+.logoposition{
+	display: flex;
+	margin-top: 10px;
+	justify-content: center;
+}
+
+.logoimg{
+/*	margin: 0 auto;*/
+
+	display: flex;
+	margin-top: 5px 0px;
+	justify-content: center;
+}
+
+.headercontrol{
+	display: flex;
+	justify-content: center;
+}
+
+.headerR{
+	display: inline;
+}
+
+.headerL{
+	display: inline;
+	width:100%;
+}
+
+/*搜尋功能*/
+
+.searchbox{
+	display:none;
+}
+
+#searchicon-pc{
+	display:none;
+}
+
+#search-pc{
+	display:none;
+}
+
+.searchicon{
+	position:absolute;
+	top:10px;
+ 	right:10px;
+	z-index: 2;
+}
+
+#search-m{
+	display:none;
+
+	position:absolute;
+	top:10px;
+ 	right:0;
+	z-index: 1;
+}
+
+/*會員功能*/
+
+.membericon{
+	display:none;
+}
+
+.carticon{
+	display: none;
+}
+
+/*分類*/
+
+.catalog{
+	color:white;
+	background-color: black;
+
+	display: flex;
+	width: 100%;
+
+}
+
+.cataloglink{
+	display: flex;
+	padding: 0px 10px;
+	width: 30%;
+	justify-content: center;
+}
+
+/*裝飾黑條*/
+
+.blackline{
+	display:none;
+
+}
+
+/*產品規格位置*/
+
+.productPos{
+	display: flex;
+	justify-content: center;
+	margin: 0px;
+}
+
+.productSpec{
+	max-width: 100%;
+}
+
+.SpecIMGdiv{
+	width: 100%;
+	margin: 0px;
+}
+
+.productSpec{
+	justify-content: center;
+	margin: 0px;
+}
+
+/*產品規格內容*/
+
+.nameTitle{
+	font-size: 30px;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+
+.namePDID{
+	font-size: 20px;
+}
+
+/*色票*/
+
+.colorText{
+	font-size: 20px;
+}
+
+.colorsampleone {
+	height: 30px;
+	width: 30px; 
+	background-color: pink;
+	margin-top: 2px;
+	margin-left: 10px;
+}
+
+/*尺寸*/
+
+.sizeText{
+	font-size: 20px;
+	text-align: center;
+}
+
+.sizeCircle{
+	height: 35px;
+	width: 35px;
+	border-radius: 34px;
+	margin: 0px 5px;
+	padding: 2px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.sizeChoose{
+	height: 35px;
+	width: 35px;
+	border-radius: 35px;
+	font-size: 20px;
+}
+
+.sizeOut{
+	height: 35px;
+	width: 35px;
+	border-radius: 35px;
+	font-size: 20px;
+}
+
+/*數量選擇*/
+
+.numberLine{
+	display: block;
+	margin-bottom: 10px;
+}
+
+.numberText{
+	display:none;
+}
+
+.numberSelect{
+	display: inline-block;
+	width: 100%;
+	height: 40px;
+	margin-left: 0px;
+}
+
+.numberChange{
+	font-size: 30px;
+	padding: 0px 30px;
+/*	text-align: center;*/
+
+/*	background-color: pink;*/
+}
+
+.numberInBox{
+	font-size: 25px;
+	color: brown;
+	margin: 0px 3px;
+	text-align: center;
+}
+
+
+/*加入購物車*/
+
+.addToCart{
+	display:none;
+}
+
+.addToCartM{
+	width: 100%;
+	height: 40px;
+	background-color: black;
+	color:white;
+	text-align: center;
+	padding: 5px 2px;
+	margin: 10px 0px;
+	font-size: 22px;
+}
+
+/*產品說明*/
+
+.productText{
+	display: inline-block;
+	width: 90%;
+	vertical-align:top;
+	margin-left: 18px;
+}
+
+
+/*細部說明區塊*/
+
+.detailHeader{
+	margin: 20px 0px; 
+	display: block;
+/*	width:95%;*/
+}
+
+.detailTitle{
+	display: inline-block;
+	letter-spacing: 2px;
+	color: #9F5000;
+	font-size: 20px;
+	font-weight:bold;
+	margin-left:20px;
+	margin-right: 0px;
+	width: 30%;
+}
+
+.detailBorder{
+	display: inline-block;
+	width: 60%;
+	height: 26px;
+	margin-left: 0px;
+	margin-right: 5px;
+
+/*	background-color: pink;*/
+}
+
+.detailContent{
+	max-width: 100%;
+	margin:0px 5px;
+}
+
+.detailImgPos{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin: 30px 0px;
+}
+
+.detailImg{
+	width:90%;
+}
+
+.detailText{
+	margin:0px 15px;
+}
+
+/*浮動置底*/
+
+.stickybar{
+	display:inline;
+	position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height:60px;
+   background-color: black;
+   color: white;
+   text-align: center;
+   font-size: 20px;
+}
+
+.inCart{
+	display:none;
+}
+
+.inCartM{
+	height: 20px;
+	width: 20px;
+	border-radius: 20px;
+	background-color: brown;
+	opacity: 0.8;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	z-index: 2;
+
+	position: absolute;
+	top: 24px;
+	margin-left: 15px;
+
+	/*display:none;*/
+
+}
+
+/*footer區塊控制*/
+
+.allfooter { 
+	height: 250px;
+}
+
+.footeritem {
+	display: flex;
+}
+
+.aboutlinkcontrol{
+	display: flex;
+	flex-wrap: wrap;
+	width:50%;
+	margin-left: 5%;
+}
+
+.aboutlinks{
+	display:block;
+	float: none;
+	padding: 0px;
+	width:50%;
+}
+
+.socialiconcontrol{
+/*	display: inline-block;*/
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+	width:42%;
+	margin-right: 2%;
+}
+
+.copyrightcontrol{
+	display:flex;
+	justify-content: center;
+	width: 100%;
+	flex-wrap: nowrap;
+}
+
+
+}
+

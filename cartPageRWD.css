@@ -1,0 +1,521 @@
+/*product頁面使用的RWD*/
+
+@media (min-width: 1024px) {	
+
+/*搜尋框*/
+
+.searchbox{
+	width: 200px;
+}
+
+#search-pc{
+	position:absolute;
+	top:5px;
+ 	right:75px;
+	z-index: 1;
+}
+
+#searchicon-pc{
+/*	display:none;*/
+	position:absolute;
+	top:10px;
+ 	right: 90px;
+	z-index: 2;
+}
+
+#searchicon-m{
+	display:none;
+}
+
+#search-m{
+	display:none;
+}
+
+/*加入購物車*/
+
+.addToCartM{
+	display:none;
+}
+
+/*懸浮置底*/
+
+.stickybar{
+	display:none;
+}
+
+/*footer*/
+
+.aboutlinkcontrol{
+	display:flex;
+	width: 60%
+}
+
+.aboutlinks{
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+.socialiconcontrol{
+	display:flex;
+	width: 15%;
+}
+
+.copyrightcontrol{
+	display:flex;
+	width: 20%;
+}
+
+.copyright {
+	margin-top: 20px;
+}
+
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+/*搜尋框*/
+
+.searchicon{
+	/*display: none;*/
+}
+
+.searchbox{
+	width: 150px;
+}
+
+#search-pc{
+
+	position:absolute;
+	top:5px;
+ 	right:75px; 
+	z-index: 1;
+}
+
+#searchicon-pc{
+	position:absolute;
+	top:10px;
+ 	right:90px;
+	z-index: 2;
+}
+
+#search-m{
+	display:none;
+}
+
+#searchicon-m{
+	display:none;
+}
+
+
+/*明細上方項目說明*/
+
+/*結帳明細*/
+
+.cartContentBox{
+	width: 700px;
+}
+
+.product{
+	display: flex;
+	margin: 20px 30px;
+	width: 50%;
+}
+
+
+/*浮動置底*/
+
+.stickybar{
+	display:none;
+}
+
+
+/*footer*/
+
+.allfooter { 
+	height: 140px;
+}
+
+
+.aboutlinkcontrol{
+	width: 70%
+}
+
+.socialiconcontrol{
+	display:flex;
+	width: 25%;
+}
+
+.copyrightcontrol{
+	display:flex;
+	justify-content: center;
+	width: 100%;
+/*	flex-wrap: nowrap;*/
+}
+
+
+}
+
+@media (max-width: 767px) {
+
+/*控制header內的東西*/
+
+.logoposition{
+	display: flex;
+	margin-top: 10px;
+	justify-content: center;
+}
+
+.logoimg{
+/*	margin: 0 auto;*/
+
+	display: flex;
+	margin-top: 5px 0px;
+	justify-content: center;
+}
+
+.headercontrol{
+	display: flex;
+	justify-content: center;
+}
+
+.headerR{
+	display: inline;
+}
+
+.headerL{
+	display: inline;
+	width:100%;
+}
+
+/*搜尋功能*/
+
+.searchbox{
+	display:none;
+}
+
+#searchicon-pc{
+	display:none;
+}
+
+#search-pc{
+	display:none;
+}
+
+.searchicon{
+	position:absolute;
+	top:10px;
+ 	right:10px;
+	z-index: 2;
+}
+
+#search-m{
+	display:none;
+
+	position:absolute;
+	top:10px;
+ 	right:0;
+	z-index: 1;
+}
+
+/*會員功能*/
+
+.membericon{
+	display:none;
+}
+
+.carticon{
+	display: none;
+}
+
+/*分類*/
+
+.catalog{
+	color:white;
+	background-color: black;
+
+	display: flex;
+	width: 100%;
+
+}
+
+.cataloglink{
+	display: flex;
+	padding: 0px 10px;
+	width: 30%;
+	justify-content: center;
+}
+
+/*裝飾黑條*/
+
+.blackline{
+	display:none;
+
+}
+
+
+.siteMap{
+	display:none;
+}
+
+.listName{
+	display:none;
+}
+
+.cartContentBox{
+	width: 90%;
+}
+
+.cartNow{
+	margin-top: 10px;
+}
+
+.buyList{
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+	border-top-style: solid;
+	border-top-color: darkgrey;
+	border-width: 1px;
+	margin: 10px 0px;
+}
+
+.buylistItem{
+	display: block;
+	/*width: 90%;*/
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: black;
+	position: relative;
+}
+
+
+/*產品圖文*/
+.product{
+	display: flex;
+	width: 100%;
+}
+
+.PDcheck{
+	display: block;
+	margin-left: 10px;
+	letter-spacing: 1px;
+	font-size: 14px
+}
+
+.pic{
+	display: inline-block;
+	width: 150px;
+}
+
+.itemCount{
+	/*display: inline-block;*/
+	margin: 30px 40px;
+}
+
+/*右邊產品價格*/
+.PDprice{
+	display: inline-block;
+	justify-content: center;
+	text-align: center;
+	line-height: 30px;
+	margin: 5px 0px;
+	width: 30%;
+}
+
+.PDadd{
+	display: inline-block;
+	justify-content: center;
+	text-align: center;
+	line-height: 30px;
+}
+
+.itemCount{
+
+	/*margin: 0px 30px;*/
+	margin-top:0px;
+	margin-bottom: 10px;
+	width: 80px;
+	height: 30px;
+}
+
+
+.textOnlyM{
+	display: block;
+}
+
+.removeIcon{
+	/*display: none;*/
+	position: absolute;
+	margin-bottom: 0px;
+	top: 20px;
+	right:0;
+}
+
+/*配送與付款*/
+
+.deliveryBox{
+	display: block;
+	width: 100%;
+	height: 150px;
+	margin: 10px 0px; 
+	padding-top: 10px;
+}
+
+.optionBox{
+	display: block;
+	line-height: 30px;
+	text-align: center;
+	margin: 0px 10px;
+	text-align: left;
+	width: 90%;
+}
+
+.selectBox{
+	display: block;
+	background-color: #f3f3f3;
+	border-radius: 5px;
+	padding: 2px 0px;
+	line-height: 24px;
+	width: 100%;
+}
+
+.deliveryM{
+	display: flex;
+}
+
+.deliveryTime{
+	display: inline-block;
+	width: 30%;
+	font-size: 14px;
+	margin-right: 5px;
+}
+
+/*訂購資料*/
+
+.orderInput{
+	display: block;
+	margin: 20px 0px;
+}
+
+.orderData{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.inputClass{
+	line-height: 24px;
+	font-size: 14px;
+	width: 90%;
+}
+
+
+.attention{
+	display: flex;
+	justify-content: left;
+	color: brown;
+	width: 90%;
+
+}
+
+.payButton{
+	display: none;
+}
+
+.payButtonM{
+	display:inline-block;
+	background-color: black;
+	color:white;
+	font-size: 20px;
+	letter-spacing: 2px;
+	width: 100%;
+	height: 30px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	margin: 30px 0px;
+
+}
+
+
+/*浮動置底*/
+
+.stickybar{
+	display:inline;
+	position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height:60px;
+   background-color: black;
+   color: white;
+   text-align: center;
+   font-size: 20px;
+}
+
+.inCart{
+	display:none;
+}
+
+.inCartM{
+	height: 20px;
+	width: 20px;
+	border-radius: 20px;
+	background-color: brown;
+	opacity: 0.8;
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	z-index: 2;
+
+	position: absolute;
+	top: 24px;
+	margin-left: 15px;
+
+	/*display:none;*/
+
+}
+
+/*footer區塊控制*/
+
+.allfooter { 
+	height: 250px;
+}
+
+.footeritem {
+	display: flex;
+}
+
+.aboutlinkcontrol{
+	display: flex;
+	flex-wrap: wrap;
+	width:50%;
+	margin-left: 5%;
+}
+
+.aboutlinks{
+	display:block;
+	float: none;
+	padding: 0px;
+	width:50%;
+}
+
+.socialiconcontrol{
+/*	display: inline-block;*/
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row-reverse;
+	width:42%;
+	margin-right: 2%;
+}
+
+.copyrightcontrol{
+	display:flex;
+	justify-content: center;
+	width: 100%;
+	flex-wrap: nowrap;
+}
+
+
+}
+

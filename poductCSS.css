@@ -1,0 +1,451 @@
+/*全新CSS*/
+
+/*全頁共通設定*/
+
+head,
+body,
+footer{
+	font-family: PingFangTC, 微軟正黑體;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+ 
+div a{ 
+	color: inherit;
+    text-decoration: none;
+}
+
+/*header改用flex*/
+
+.logoimg{
+	margin: 5px;
+}
+
+.headercontrol{
+	display: flex;
+	justify-content: space-between;
+}
+
+.cataloglink{
+	display: inline-block;
+	justify-content: left;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.headerR{
+	display: flex;
+}
+
+.headerL{
+	display: flex;
+}
+
+
+.search{
+	height: 30px;
+	border-style: solid;
+	border-color: lightgrey;
+	border-width: 1px;
+	border-radius:20px;
+	margin-top: 7px;
+	margin-right: 10px;
+	margin-left: 6px;
+
+	justify-content: right;
+	font-size: 16px;
+	padding-left: 10px;
+	font-family: PingFangTC, 微軟正黑體;
+}
+
+.search-m{
+	height: 32px;
+	border-style: solid;
+	border-color: lightgrey;
+	border-width: 1px;
+	border-radius: 20px;
+	margin-right: 2px;
+	font-size: 14px;
+	padding-left: 3px;
+	font-family: PingFangTC, 微軟正黑體;
+}
+
+/*會員功能*/
+
+.membericon{
+	justify-content: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+.carticon{
+	justify-content: right;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+ 
+.inCart{
+	height: 17px;
+	width: 17px;
+	border-radius: 17px;
+	background-color: brown;
+	opacity: 0.8;
+	color: white;
+	font-size: 12px;
+	text-align: center;
+
+	position: absolute;
+	top: 23px;
+	right: 50px;
+
+}
+
+/*裝飾黑條*/
+
+.blackline{
+	height: 25px;
+	width: 100%;
+	background-color: black;
+}
+
+
+/*純產品的內容*/
+
+/*控制版面位置*/
+
+.productPos{
+/*	display: inline-block;*/
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.productSpec{
+	/*display: inline-block;*/
+	/*display: flex;*/
+	max-width: 1000px;
+	justify-content: center;
+	margin-left: 30px;
+
+}
+
+.SpecIMGdiv{
+	display: inline-block;
+	width: 50%;
+	margin-right: 40px;
+	margin-top: 20px;
+}
+
+.productText{
+	display: inline-block;
+	width: 35%;
+	vertical-align:top;
+	margin-top: 18px;
+	letter-spacing: 1px;
+}
+
+.SpecIMG{
+	width: 100%;
+}
+
+/*標題資訊*/
+
+.nameLine{
+	display: block;
+	margin-bottom: 10px;
+}
+
+.nameTitle{
+	font-size: 24px;
+	letter-spacing: 2px;
+	margin-bottom: 10px;
+}
+
+.namePDID{
+	color:grey;
+	letter-spacing: 2px;
+	margin-bottom: 30px;
+}
+
+.nameBorder{
+	border-bottom-color: black;
+	border-bottom-style: solid;
+	border-width: 1px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+
+/*色票*/
+
+.colorLine{
+	display: block;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+
+.colorText{
+	display: inline-block;
+	letter-spacing: 2px;
+}
+
+.colorsampleone {
+	height: 25px;
+	width: 25px; 
+	background-color: steelblue;
+	margin-top: 2px;
+	margin-left: 10px;
+	display: inline-block;
+}
+
+.colorChoose {
+	height: 25px;
+	width: 25px; 
+	background-color: steelblue;
+	margin-top: 2px;
+	margin-left: 10px;
+	display: inline-block;
+
+	outline-width: 1px;
+	outline-offset: 3px;
+	outline-color: darkgrey;
+	outline-style: solid;
+}
+
+
+/*尺寸圓形圖*/
+
+.sizeLine{
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+.sizeText{
+	display: inline-block;
+	letter-spacing: 2px;
+}
+
+.sizeCircle{
+	height: 25px;
+	width: 25px;
+	border-radius: 25px;
+	margin: 0px 5px;
+	padding: 1px;
+	background-color: lightgrey;
+	display: inline-block;
+	text-align: center;
+	font-size: 14px;
+	pointer-events:auto;
+}
+
+.sizeChoose{
+	height: 25px;
+	width: 25px;
+	border-radius: 25px;
+	margin: 0px 5px;
+	padding: 1px;
+	background-color: black;
+	color:white;
+	display: inline-block;
+	text-align: center;
+	font-size: 14px;
+	pointer-events:auto;
+}
+
+.sizeOut{
+	height: 25px;
+	width: 25px;
+	border-radius: 25px;
+	margin: 0px 5px;
+	padding: 1px;
+	background-color: lightgrey;
+	color:darkgrey;
+	display: inline-block;
+	text-align: center;
+	font-size: 14px;
+	opacity: 0.5;
+	pointer-events:none;
+}
+
+/*數量選擇*/
+
+.numberLine{
+	display: block;
+	margin-bottom: 40px;
+}
+
+.numberText{
+	display: inline-block;
+	letter-spacing: 2px;
+}
+
+.numberSelect{
+	display: inline-block;
+	border-color:black;
+	border-style:solid;
+	border-width: 1px;
+	width: 150px;
+	height: 30px;
+	margin-left: 10px;
+}
+
+.numberBox{
+	display:flex;
+	justify-content: space-between;
+}
+
+.numberChange{
+	font-size: 20px;
+	padding: 0px 10px;
+	text-align: center;
+
+	/*background-color: pink;*/
+}
+
+.numberInBox{
+	font-size: 20px;
+	color: brown;
+	margin: 0px 3px;
+	text-align: center;
+}
+
+
+/*加入購物車按鈕*/
+
+.addToCart{
+	height: 30px;
+	width: 150px;
+	background-color: black;
+	color:white;
+	text-align: center;
+	padding: 5px 50px;
+	margin: 20px 0px;
+}
+
+/*產地跟材質說明*/
+
+.originText{
+	margin: 30px 0px;
+	font-size: 18px;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+
+/*細部說明區塊*/
+
+.detailHeader{
+	margin: 20px 0px; 
+}
+
+.detailTitle{
+	display: inline-block;
+	letter-spacing: 2px;
+	color: #9F5000;
+	font-size: 20px;
+	font-weight:bold;
+}
+
+.detailBorder{
+	display: inline-block;
+	border-bottom-color: black;
+	border-bottom-style: solid;
+	width: 85%;
+	height: 26px;
+	border-width: 1px;
+	margin-left: 20px;
+
+/*	background-color: pink;*/
+}
+
+.detailContent{
+	/*max-width: 900px;*/
+	width: 95%;
+}
+
+.detailImgPos{
+	display: flex;
+	justify-content: center;
+/*	width: 500px;*/
+	width: 95%;
+	margin: 30px 0px;
+}
+
+.detailImg{
+	width:100%;
+}
+
+
+/*浮動置底*/
+
+.cart-m{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.member-m{
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.stickybar-icon{
+	display: inline-block;
+}
+
+.stickybar-text{
+	display: inline-block;
+	padding-bottom: 10px;
+}
+
+
+/*控制footer區塊*/
+
+.allfooter { 
+	background-color: black; 
+	color: white;
+	height: 100px;
+	width: 100%;
+	padding-top:10px;
+}
+
+.footeritem{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.aboutlinkcontrol{
+	display:flex;
+	justify-content: center;
+	width: 60%;
+}
+
+.aboutlinks{
+	display: inline-block;
+	padding: 10px;
+	color: #f5f5f5;
+}
+
+.socialiconcontrol{
+	display:flex;
+/*	justify-content: center;*/
+	width: 20%;
+/*	float: right;*/
+}
+
+.socialicon {
+	margin: 10px;
+	display: inline-block;
+	float: right;
+}
+
+.copyrightcontrol{
+	display:flex;
+	width: 10%
+}
+
+.copyright {
+	color: #828282;
+	font-size: 0.75rem;
+	display: block;
+	margin-top: 10px;
+}

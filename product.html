@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Stylish</title>
+
+	<meta name="viewport" content="width=device-width">
+
+	<!-- 僅產品部分使用的CSS -->
+	<link rel="stylesheet" href="./poductCSS.css"> 
+	<link rel="stylesheet" href="./productRWD.css">
+
+</head>
+	
+<!-- index.js的東西之後記得接回來、搜尋相關再檢查一次 -->
+
+<body>
+
+	<header>
+
+	<div class=headercontrol>
+
+		<div class="headerL">
+
+			<!-- LOGO   -->
+			<div class="logoposition">
+				<div class="logoimg"><img src="./images/logo.png" width="190px"></div>
+			</div> 
+
+			<!-- 分類選項 -->
+
+			<div class="catalog">
+				<div id="women" class="cataloglink">
+					<p class="catalogtext"><a href="index.html?category=women">女裝</a></p>
+				</div>
+				<div id="men" class="cataloglink">
+					<p class="catalogtext"><a href="index.html?category=men">男裝</a></p>
+				</div>	
+				<div id="accessories" class="cataloglink">
+					<p class="catalogtext"><a href="index.html?category=accessories">配件</a></p>
+				</div>	
+			</div>
+		</div>
+
+		<!-- 會員功能 -->
+		<div class="headerR">
+			<div class=headerR>
+				<div id="searchicon-pc" class="searchicon topicon" type="button" value="submit" onclick="searchPC()"><img src="./images/search.png" width="30px"></div>
+				<input id="search-pc" type="search" class="search" placeholder="搜尋"></input>
+			<div>
+					<div id="searchicon-m" class="searchicon topicon" type="button" value="submit" onclick="searchM()"><img src="./images/search.png" width="30px"></div>
+					<input id="search-m" type="search" class="search-m" placeholder="搜尋"></input>
+				</div>
+				<div class="carticon topicon"><img src="./images/cart.png" height="30px" width="30px"></div>
+				<div id="inCart" class="inCart">0</div>
+				<div class="membericon topicon"><img src="./images/member.png" width="30px"></div>
+			</div>
+		</div>
+
+
+
+	</div>
+
+</header>
+
+	<!-- 黑色裝飾條 -->
+
+	<div>
+		<div class="blackline"></div>
+	</div>
+ 	
+ 	<!-- 上方產品規格 -->
+
+	<div id="PDPos" class="productPos">
+		<div id="PDBody" class="productSpec">
+			
+		</div>
+	</div>
+
+
+
+<!-- 懸浮置底 -->
+
+	<div class="stickybar">
+		<div class=cart-m>
+			<img class="stickybar-icon" src="./images/cart-mobile.png" width="32px">
+			<div id="inCartM" class="inCartM">0</div>
+			<p class="stickybar-text">購物車</p>
+		</div>
+		<div class=member-m>
+			<img class="stickybar-icon" src="./images/member-mobile.png" width="32px">
+			<p class="stickybar-text">會員</p>
+		</div>
+	</div>
+
+<!-- footer -->
+
+<footer id="footer" class="allfooter">
+	<div class="footeritem">
+		<div class="aboutlinkcontrol">
+			<div class="aboutlinks">
+				<p><a href="#">關於stylish</a></p>
+			</div>	
+			<div class="aboutlinks">
+				<p><a href="#">服務條款</a></p>
+			</div>	
+			<div class="aboutlinks">
+				<p><a href="#">隱私政策</a></p>
+			</div>	
+			<div class="aboutlinks">
+				<p><a href="#">聯絡我們</a></p>
+			</div>	
+			<div class="aboutlinks">
+				<p><a href="#">FAQ</a></p>
+			</div>	 
+		</div>
+
+		<div class="socialiconcontrol">
+			<div class="socialicon"><img src="./images/facebook.png" width="30px"></div>
+			<div class="socialicon"><img src="./images/twitter.png" width="30px"></div>
+			<div class="socialicon"><img src="./images/line.png" width="30px"></div>
+		</div>
+
+		<div class="copyrightcontrol"> 
+			<div class="copyright">
+				<sapn>&copy; 2018. All rights resevered.</sapn>
+			</div>
+		</div>	
+
+	</div>
+
+
+
+</footer>  
+
+</body>
+ 
+ <!-- index.js還有共用部分之後再拆出來 -->
+<!--  	<script src="index.js"></script>  -->
+<!--  	<script src="marketing.js"></script>  -->
+ 	<script src="productJS.js"></script> 
+
+</html>

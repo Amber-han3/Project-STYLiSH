@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Stylish</title>
+	<link rel="stylesheet" href="./main.css">
+	<link rel="stylesheet" href="./screensize.css">
+	<meta name="viewport" content="width=device-width">
+
+</head>
+	
+
+
+<body>
+
+
+	<header>
+
+	<div class=headercontrol>
+
+		<div class="headerL">
+
+			<!-- LOGO   -->
+			<div class="logoposition">
+				<div class="logoimg"><img src="./images/logo.png" width="190px"></div>
+			</div> 
+
+			<!-- 分類選項 -->
+
+			<div class="catalog">
+				<div id="women" class="cataloglink">
+					<p class="catalogtext">女裝</p>
+				</div>
+				<div id="men" class="cataloglink">
+					<p class="catalogtext">男裝</p>
+				</div>	
+				<div id="accessories" class="cataloglink">
+					<p class="catalogtext">配件</p>
+				</div>	
+			</div>
+		</div>
+
+		<!-- 會員功能 -->
+		<div class="headerR">
+			<div class=headerR>
+				<div id="searchicon-pc" class="searchicon topicon" type="button" value="submit" onclick="searchPC()"><img src="./images/search.png" width="30px"></div>
+				<input id="search-pc" type="search" class="search" placeholder="搜尋"></input>
+			<div>
+					<div id="searchicon-m" class="searchicon topicon" type="button" value="submit" onclick="searchM()"><img src="./images/search.png" width="30px"></div>
+					<input id="search-m" type="search" class="search-m" placeholder="搜尋"></input>
+				</div>
+				<div class="carticon topicon"><img src="./images/cart.png" height="30px" width="30px"></div>
+				<div id="inCart" class="inCart">0</div>
+				<div class="membericon topicon"><img src="./images/member.png" width="30px"></div>
+			</div>
+		</div>
+
+
+
+	</div>
+
+</header>
+
+	<!-- BANNER區塊 -->
+
+	<div class="main-banner">
+		<div class="bannerline"></div>
+		<div id="banner" class="bannerimg">
+			<div id="bannerText" class="bannertext-all">
+			</div>
+		</div>
+
+		<!-- 圖片下方顯示目前在第幾張用的 -->
+		<div class="dotLine">
+			<div id="dotA" class="dotOff"></div>
+			<div id="dotB" class="dotOff"></div>
+			<div id="dotC" class="dotOff"></div>
+		</div>	
+	</div>
+ 
+
+
+	<!-- 產品圖片區塊 m版兩張一排 PC三張一排-->
+
+	<div class="productposition">
+		<div id="container" class="productbody">
+	   
+			<div id="item" class="product">		
+			</div>
+
+		</div>
+	</div>
+
+<!-- 舊的 -->
+<!-- 	<div class="stickybar">
+		<div class=cart-m>
+			<img class="stickybar-icon" src="./images/cart-mobile.png" width="32px">
+			<p class="stickybar-text">購物車</p>
+		</div>
+		<div class=member-m>
+			<img class="stickybar-icon" src="./images/member-mobile.png" width="32px">
+			<p class="stickybar-text">會員</p>
+		</div>
+	</div> -->
+
+<!-- 懸浮置底 -->
+
+	<div class="stickybar">
+		<div class=cart-m>
+			<img class="stickybar-icon" src="./images/cart-mobile.png" width="32px">
+			<div id="inCartM" class="inCartM">0</div>
+			<p class="stickybar-text">購物車</p>
+		</div>
+		<div class=member-m>
+			<img class="stickybar-icon" src="./images/member-mobile.png" width="32px">
+			<p class="stickybar-text">會員</p>
+		</div>
+	</div>
+
+
+<footer id="footer" class="allfooter">
+	<div class="footeritem">
+		<div class="aboutlinkcontrol">
+			<div class="aboutlinks">
+				<p><a href="#">關於stylish</a></p>
+			</div>	
+			<div class="aboutlinks">
+				<p><a href="#">服務條款</a></p>
+			</div>	
+			<div class="aboutlinks">
+				<p><a href="#">隱私政策</a></p>
+			</div>	
+			<div class="aboutlinks">
+				<p><a href="#">聯絡我們</a></p>
+			</div>	
+			<div class="aboutlinks">
+				<p><a href="#">FAQ</a></p>
+			</div>	 
+		</div>
+
+		<div class="socialiconcontrol">
+			<div class="socialicon"><img src="./images/facebook.png" width="30px"></div>
+			<div class="socialicon"><img src="./images/twitter.png" width="30px"></div>
+			<div class="socialicon"><img src="./images/line.png" width="30px"></div>
+		</div>
+
+		<div class="copyrightcontrol"> 
+			<div class="copyright">
+				<sapn>&copy; 2018. All rights resevered.</sapn>
+			</div>
+		</div>	
+
+	</div>
+
+
+
+</footer>  
+
+</body>
+ 
+ 	<script src="index.js"></script> 
+ 	<script src="marketing.js"></script> 
+ 	<script src="productJS.js"></script> 
+
+
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Stylish</title>
+
+	<meta name="viewport" content="width=device-width">
+
+	<!-- 僅產品部分使用的CSS -->
+	<link rel="stylesheet" href="./cartPageCSS.css"> 
+	<link rel="stylesheet" href="./cartPageRWD.css">
+
+</head>
+
+<body>
+
+	<header>
+
+	<div class=headercontrol>
+
+		<div class="headerL">
+
+			<!-- LOGO   -->
+			<div class="logoposition">
+				<div class="logoimg"><img src="./images/logo.png" width="190px"></div>
+			</div> 
+
+			<!-- 分類選項 -->
+
+			<div class="catalog">
+				<div id="women" class="cataloglink">
+					<p class="catalogtext"><a href="index.html?category=women">女裝</a></p>
+				</div>
+				<div id="men" class="cataloglink">
+					<p class="catalogtext"><a href="index.html?category=men">男裝</a></p>
+				</div>	
+				<div id="accessories" class="cataloglink">
+					<p class="catalogtext"><a href="index.html?category=accessories">配件</a></p>
+				</div>	
+			</div>
+		</div>
+
+		<!-- 會員功能 -->
+		<div class="headerR">
+			<div class=headerR>
+				<div id="searchicon-pc" class="searchicon topicon" type="button" value="submit" onclick="searchPC()"><img src="./images/search.png" width="30px"></div>
+					<input id="search-pc" type="search" class="search" placeholder="搜尋"></input>
+				<div>
+				<div id="searchicon-m" class="searchicon topicon" type="button" value="submit" onclick="searchM()"><img src="./images/search.png" width="30px"></div>
+					<input id="search-m" type="search" class="search-m" placeholder="搜尋"></input>
+				</div>
+				<div class="carticon topicon"><img src="./images/cart.png" height="30px" width="30px"></div>
+				<div id="inCart" class="inCart">0</div>
+				<div class="membericon topicon"><img src="./images/member.png" width="30px"></div>
+			</div>
+		</div>
+
+
+
+	</div>
+
+</header>
+
+<!-- 黑色裝飾條 -->
+
+<div>
+	<div class="blackline"></div>
+</div>
+
+<!-- 本頁主要內容部分 -->
+<div class="cartContent">
+	<div class="cartContentBox">
+
+		<!-- 現在位置 -->
+
+		<div class="siteMap">HOME>BAG</div>
+
+
+		<!-- 購物車內容 -->
+
+		<div class="buylistName">
+			<div id="cartNow" class="cartNow">購物車(0)</div>
+			<div class="listName">數量</div>
+			<div class="listName">單價</div>
+			<div class="listName">小計</div>
+		</div>
+		<div id="buyList" class="buyList">
+
+<!-- 			<div id="listItem" class="buylistItem">
+				<div class="product">
+					<div class="pic">
+						<img class="productImg" src="./images/main.jpg">					
+					</div>
+					<div class="PDcheck">
+						<div>腰鬆緊棉麻褲裙</div>
+						<br>
+						<div>03040047</div>
+						<br>
+						<div>顏色│白色</div>
+						<div>尺寸│M</div>
+					</div>
+				</div>
+				<div class="PDadd">
+					<div class="textOnlyM">數量</div>
+					<select class="itemCount">
+	　					<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+					</select>
+				</div>
+				<div class="PDprice">
+					<div class="textOnlyM">單價</div>
+					<div>NT.590</div>
+				</div>
+				<div class="PDprice">
+					<div class="textOnlyM">小計</div>
+					<div>NT.590</div>
+				</div>
+				<div class="removeIcon">
+					<img id="removeImg" src="./images/cart-remove.png" width="40px">
+				</div>
+			</div>
+
+			<div class="buylistItem">
+				<div class="product">
+					<div class="pic">
+						<img class="productImg" src="./images/main.jpg">					
+					</div>
+					<div class="PDcheck">
+						<div>腰鬆緊棉麻褲裙</div>
+						<br>
+						<div>03040047</div>
+						<br>
+						<div>顏色│白色</div>
+						<div>尺寸│M</div>
+					</div>
+				</div>
+				<div class="PDadd">
+					<div class="textOnlyM">數量</div>
+					<select class="itemCount">
+	　					<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+					</select>
+				</div>
+				<div class="PDprice">
+					<div class="textOnlyM">單價</div>
+					<div>NT.590</div>
+				</div>
+				<div class="PDprice">
+					<div class="textOnlyM">小計</div>
+					<div>NT.590</div>
+				</div>
+				<div class="removeIcon">
+					<img src="./images/cart-remove.png" width="40px">
+				</div>
+			</div>
+
+			<div class="buylistItem">
+				<div class="product">
+					<div class="pic">
+						<img class="productImg" src="./images/main.jpg">					
+					</div>
+					<div class="PDcheck">
+						<div>腰鬆緊棉麻褲裙</div>
+						<br>
+						<div>03040047</div>
+						<br>
+						<div>顏色│白色</div>
+						<div>尺寸│M</div>
+					</div>
+				</div>
+				<div class="PDadd">
+					<div class="textOnlyM">數量</div>
+					<select class="itemCount">
+	　					<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+					</select>
+				</div>
+				<div class="PDprice">
+					<div class="textOnlyM">單價</div>
+					<div>NT.590</div>
+				</div>
+				<div class="PDprice">
+					<div class="textOnlyM">小計</div>
+					<div>NT.590</div>
+				</div>
+				<div class="removeIcon">
+					<img src="./images/cart-remove.png" width="40px">
+				</div>
+			</div> -->
+
+		</div>
+
+
+		<!-- 配送與付款 -->
+
+		<div class="deliveryBox">
+			<div class="optionBox">
+				<div class="optionBox">配送國家</div>
+				<select class="optionBox selectBox">
+　					<option value="Taiwan">臺灣及離島</option>
+				</select>
+			</div>
+			<div class="optionBox">
+				<div class="optionBox">付款方式</div>
+				<select class="optionBox selectBox">
+　					<option value="Cash on delivery">宅配貨到付款</option>
+				</select>
+			</div>
+		</div>
+
+		<!--注意事項 -->
+
+		<div>
+			※提醒您：<br>
+			●選擇宅配-請填寫正確收件人資訊，避免包裹配送不達<br>
+			●選擇超商-請填寫正確收件人姓名(與證件相符)，避免無法領取<br>
+		</div>
+
+
+		<!-- 訂購資料 -->
+
+		<div class="orderTitle">訂購資料</div>
+		<div class="orderBorder"></div>
+		<div class="orderInput">
+			<div class="orderData">收件人姓名</div>
+			<input type="text" class="inputClass" placeholder="收件人姓名">
+		</div>
+		<div class="attention">務必填寫完整收件人姓名，避免包裹無法順利簽收</div>
+		<div class="orderInput">
+			<div class="orderData">手機</div>
+			<input type="text" class="inputClass" placeholder="手機號碼">
+		</div>
+		<div class="orderInput">
+			<div class="orderData">地址</div>
+			<input type="text" class="inputClass" placeholder="地址">
+		</div>
+		<div class="orderInput deliveryM">
+			<div class="orderData">配送時間</div>
+			<div class="deliveryTime">
+				<input type="radio" name="time">08:00~12:00
+			</div>
+			<div class="deliveryTime">
+				<input type="radio" name="time">14:00~20:00
+			</div>
+			<div class="deliveryTime">
+				<input type="radio" name="time">不指定時間
+			</div>
+		</div>
+		<div class="orderBorder"></div>
+
+		<!-- 總計 -->
+		<div class="totalContent">
+			<div class="totalBox">
+			
+				<div class="totalLine">
+					<div class="totalText">總金額</div>
+					<div class="totalNT">NT.</div>
+					<div id="payCount" class="dollar">0</div>	
+				</div>
+				<div class="totalLine">
+					<div class="totalText">運費</div>
+					<div class="totalNT">NT.</div>
+					<div class="dollar">60</div>	
+				</div>
+				<div class="totalBorder"></div>
+				<div class="totalLine">
+					<div class="totalText">應付金額</div>
+					<div class="totalNT">NT.</div>
+					<div id="payTotal" class="dollar">60</div>			
+				</div>
+				<div class="payButton">確認付款</div>
+
+			</div>
+		</div>
+		<div class="payButtonM">確認付款</div>
+
+	</div>
+</div>
+
+<!-- 懸浮置底 -->
+
+	<div class="stickybar">
+		<div class=cart-m>
+			<img class="stickybar-icon" src="./images/cart-mobile.png" width="32px">
+			<div id="inCartM" class="inCartM">0</div>
+			<p class="stickybar-text">購物車</p>
+		</div>
+		<div class=member-m>
+			<img class="stickybar-icon" src="./images/member-mobile.png" width="32px">
+			<p class="stickybar-text">會員</p>
+		</div>
+	</div>
+
+<!-- footer -->
+
+<footer id="footer" class="allfooter">
+	<div class="footeritem">
+		<div class="aboutlinkcontrol">
+			<div class="aboutlinks">
+				<p><a href="#">關於stylish</a></p>
+			</div>	
+			<div class="aboutlinks">
+				<p><a href="#">服務條款</a></p>
+			</div>	
+			<div class="aboutlinks">
+				<p><a href="#">隱私政策</a></p>
+			</div>	
+			<div class="aboutlinks">
+				<p><a href="#">聯絡我們</a></p>
+			</div>	
+			<div class="aboutlinks">
+				<p><a href="#">FAQ</a></p>
+			</div>	 
+		</div>
+
+		<div class="socialiconcontrol">
+			<div class="socialicon"><img src="./images/facebook.png" width="30px"></div>
+			<div class="socialicon"><img src="./images/twitter.png" width="30px"></div>
+			<div class="socialicon"><img src="./images/line.png" width="30px"></div>
+		</div>
+
+		<div class="copyrightcontrol"> 
+			<div class="copyright">
+				<sapn>&copy; 2018. All rights resevered.</sapn>
+			</div>
+		</div>	
+
+	</div>
+
+
+
+</footer>  
+
+</body>
+ 
+ <!-- index.js還有共用部分之後再拆出來 -->
+<!--  	<script src="index.js"></script>  -->
+<!--  	<script src="marketing.js"></script>  -->
+ 	<script src="cartPageJS.js"></script> 
+
+</html>
