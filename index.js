@@ -128,7 +128,7 @@ function searchPC(){
     });
 };
 
-// M輸入搜尋 測試OK
+// M版輸入搜尋
 
 function searchM(){
     const searchM = document.getElementById("search-m").value;

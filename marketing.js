@@ -26,15 +26,10 @@ function renderBanner(banner){
         setTimeout(function (){
 
             const picURL = "https://api.appworks-school.tw"+banner.data[i].picture
-            // const story = banner.data[1].story.replace("\r\n", "<br />"); //可以但只換到第一個
             const story = banner.data[i].story.replace(/\r\n/g, "<br />");  //g 執行符號內的全域性匹配
 
             const id = banner.data[i].id
-            // const productID = "https://api.appworks-school.tw/product.html?id="+banner.data[i].product_id //之後記得改掉網址
             const productID = "https://amber-han3.github.io/Front-End-Class-Batch11/students/amber/Stylish/product.html?id="+banner.data[i].product_id
-
-            // console.log(productID);
-            // console.log(picURL+"+"+story+"+"+id+"+"+productID);
 
             // 清掉前一筆資料的內容
 
@@ -46,7 +41,6 @@ function renderBanner(banner){
             const newProduct = document.createElement("div");  
             newProduct.setAttribute("class", "main-banner");
             document.getElementById("banner").appendChild(newProduct);
-
 
             const newDiv = document.createElement("div");  
             newDiv.setAttribute("class", "bannerimg");
@@ -84,8 +78,6 @@ function renderBanner(banner){
 
             newText.setAttribute("class", "bannertext-all");
             newText.innerHTML = story;
-
-            // console.log(i-banner.data.length);
 
             //在此迴圈結束前呼叫下一輪，達成循環輪播
             if(banner.data.length -i === 1){ 

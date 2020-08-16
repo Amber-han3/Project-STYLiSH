@@ -4,14 +4,13 @@
 
 // m search 點擊顯示輸入區塊 ※
 
-const searchIM = document.getElementById("searchicon-m");
-
-    searchIM.addEventListener('click', () => {
+const searchIM = document.getElementById("searchicon-m")
+searchIM.addEventListener('click', () => {
     document.getElementById('search-m').style.display = 'block';
 });
 
 
-//取得輸入值 測試OK
+//取得輸入值
     
 function searchPC(){
     const searchPC = document.getElementById("search-pc").value;
@@ -30,7 +29,7 @@ function searchM(){
     
 function searchPC(){
     const searchPC = document.getElementById("search-pc").value;
-    console.log(searchPC);
+    // console.log(searchPC);
 
     const newProduct = document.createElement("div"); 
     const container = document.getElementById("container");
@@ -44,7 +43,7 @@ function searchPC(){
 
 function searchM(){
     const searchM = document.getElementById("search-m").value;
-    console.log(searchM);
+    // console.log(searchM);
 
     const newProduct = document.createElement("div"); 
     const container = document.getElementById("container");
@@ -164,7 +163,6 @@ function renderPD(detail){
             const colorblock = document.createElement("div");
             const colorblockShow = document.createElement("div"); 
             colorblockShow.setAttribute('class', 'colorsampleone'); 
-            // colorblockShow.setAttribute('data-colorname', detail.data.colors[j].name);
             colorblockShow.setAttribute('dataColorname', detail.data.colors[j].name);
 
             const color = detail.data.colors[j].code
@@ -172,8 +170,7 @@ function renderPD(detail){
             colorblockShow.style.backgroundColor = "#"+color;
 
             colorblockShow.appendChild(colorblock); 
-            newColor.appendChild(colorblockShow);
-            
+            newColor.appendChild(colorblockShow);          
 
             colorblockShow.addEventListener( "click", function(){
 
@@ -194,9 +191,6 @@ function renderPD(detail){
 
             // 取得色碼的中文資料
             colorName = document.querySelector(".colorChoose").getAttribute("dataColorname")
-
-            // console.log(userColor);
-            // console.log(colorName);
 
             // 這個會變成RGB數值
             // userColor = document.querySelector(".colorChoose").style.backgroundColor
@@ -229,7 +223,6 @@ function renderPD(detail){
         for (let k in detail.data.sizes){
 
             const sizeCircle = document.createElement("div");
-            // const sizeCircleShow = document.createElement("div"); 
             sizeCircle.setAttribute('class', "sizeCircle"); 
             newSize.appendChild(sizeCircle);
 
@@ -251,10 +244,8 @@ function renderPD(detail){
 
 	            // 取得賦予的size值
 	            userSize = circle
-	            // console.log("userSize"+userSize);
 
 	            // 庫存查詢
-
 				stockRecord = updateStock();
 
 				// 庫存等於0時css淡化&加上禁止點擊
@@ -353,7 +344,6 @@ function renderPD(detail){
 		addToCart.appendChild(cartText);
 
 		addToCart.addEventListener("click", addCart);
-		// addToCart.addEventListener("click", function(){alert("test")});  //測試按鈕
 
 		const addToCartM = document.createElement("div");  
 	    addToCartM.setAttribute("class", "addToCartM"); 
@@ -437,23 +427,13 @@ function renderPD(detail){
 			return stock;		    	
 		};
 
-	}; //這個是開頭判斷式的括號結尾	        
+	};         
 
-} //這個是renderPD的括號結尾
-
-
-// 正式用
+} 
 
 ajax(APIsrc, function(response){
     renderPD(response);
 });
-
-
-// // 測試用
-
-// ajax("https://api.appworks-school.tw/api/1.0/products/details?id=201807242222", function(response){
-//     renderPD(response);
-// });
 
 
 // 計算庫存用
@@ -512,13 +492,9 @@ function addCart(){
 	userList.qty = chooseNumber
 	userList.maxStock = stock
 
-	// 在這查是不是已經有重複的資料了？
-
-
-
+	// 在這查是不是已經有重複的資料了
 	
 
-	// 這條以上還在確認中 
 
 	list.push(userList);
 

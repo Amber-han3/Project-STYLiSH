@@ -325,8 +325,8 @@ function showItem(){
             document.getElementById("payTotal").innerHTML = 60
         };
 
-    }   //這是第一個for迴圈的括弧
-    // console.log(payCount);
+    }   
+
 }
 
 
@@ -338,7 +338,7 @@ showItem();
 // function removeItem(index){
 
 //     localStorage.removeItem("list"[index]);
-//     // showItem();  //記得打開
+//     // showItem(); 
 
 // }
 
