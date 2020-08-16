@@ -39,19 +39,12 @@ function render(dataF){
         // 圖片加上連結
 
         const ImgURL = "https://amber-han3.github.io/Front-End-Class-Batch11/students/amber/Stylish/product.html?id="+dataF.data[i].id
-        // console.log(ImgURL);
-        // console.log(dataF.data[i].id);
         const newImgLink = document.createElement("a");
         newImgLink.href = ImgURL
         newDiv.appendChild(newImgLink);
 
 
         // API內的圖片
-
-        // const newImg = document.createElement("img");
-        // newImg.src = dataF.data[i].main_image;  
-        // newImg.setAttribute('class', 'productimg'); 
-        // newDiv.appendChild(newImg);
 
         const newImg = document.createElement("img");
         newImg.src = dataF.data[i].main_image;  
@@ -244,7 +237,6 @@ function loadmore(src){
     // 取得主要網址
 
     const nowsrc = src
-    // console.log("這次loadmore的載入網址:"+nowsrc);
 
     // 顯示新加入內容
 

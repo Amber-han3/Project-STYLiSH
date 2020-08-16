@@ -42,7 +42,6 @@ div a{
 	display: flex;
 }
 
-
 .search{
 	height: 30px;
 	border-style: solid;
@@ -115,19 +114,15 @@ div a{
 /*控制版面位置*/
 
 .productPos{
-/*	display: inline-block;*/
 	display: flex;
 	justify-content: center;
 	margin-top: 20px;
 }
 
 .productSpec{
-	/*display: inline-block;*/
-	/*display: flex;*/
 	max-width: 1000px;
 	justify-content: center;
 	margin-left: 30px;
-
 }
 
 .SpecIMGdiv{
@@ -427,14 +422,11 @@ div a{
 
 .socialiconcontrol{
 	display:flex;
-/*	justify-content: center;*/
 	width: 20%;
-/*	float: right;*/
 }
 
 .socialicon {
 	margin: 10px;
-	display: inline-block;
 	float: right;
 }
 

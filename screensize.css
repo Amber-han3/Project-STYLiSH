@@ -7,7 +7,7 @@
 /*控制header內的東西*/
 
 .logoimg{
-	margin: 0px 10px;
+	margin: 10px;
 }
 
 /*搜尋框*/
@@ -126,7 +126,7 @@
 /*控制header內的東西*/
 
 .logoimg{
-	margin: 0px 10px;
+	margin: 10px;
 }
 
 
@@ -174,11 +174,6 @@
 	top:180px;
 	font-size: 3vw;
 }
-
-/*.bannertext-four{
-	font-size: 2vw;
-	margin-top: 0.5rem;
-}*/
 
 .main-banner{
 	height: 400px;
