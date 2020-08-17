@@ -38,7 +38,8 @@ function render(dataF){
 
         // 圖片加上連結
 
-        const ImgURL = "https://amber-han3.github.io/Front-End-Class-Batch11/students/amber/Stylish/product.html?id="+dataF.data[i].id
+        // const ImgURL = "https://amber-han3.github.io/Front-End-Class-Batch11/students/amber/Stylish/product.html?id="+dataF.data[i].id
+        const ImgURL = "https://amber-han3.github.io/Project-STYLiSH/product.html?id="+dataF.data[i].id
         const newImgLink = document.createElement("a");
         newImgLink.href = ImgURL
         newDiv.appendChild(newImgLink);
