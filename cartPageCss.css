@@ -131,6 +131,7 @@ div a{
 
 .buylistName{
 	display:flex;
+	margin-top: 20px;
 }
 
 .cartNow{
