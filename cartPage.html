@@ -21,7 +21,7 @@
 		<div class="headerL">
 
 			<!-- LOGO   -->
-			<div class="logoposition">
+			<div class="logoposition" onclick="location.href='index.html'">
 				<div class="logoimg"><img src="./images/logo.png" width="190px"></div>
 			</div> 
 
@@ -50,7 +50,7 @@
 					<input id="search-m" type="search" class="search-m" placeholder="搜尋"></input>
 				</div>
 				<div class="carticon topicon"><img src="./images/cart.png" height="30px" width="30px"></div>
-				<div id="inCart" class="inCart">0</div>
+				<div id="inCart" class="inCart" onclick="renderCart()">0</div>
 				<div class="membericon topicon"><img src="./images/member.png" width="30px"></div>
 			</div>
 		</div>
@@ -71,11 +71,6 @@
 <div class="cartContent">
 	<div class="cartContentBox">
 
-		<!-- 現在位置 -->
-
-		<div class="siteMap">HOME>BAG</div>
-
-
 		<!-- 購物車內容 -->
 
 		<div class="buylistName">
@@ -85,91 +80,6 @@
 			<div class="listName">小計</div>
 		</div>
 		<div id="buyList" class="buyList">
-
-<!-- 			<div id="listItem" class="buylistItem">
-				<div class="product">
-					<div class="pic">
-						<img class="productImg" src="./images/main.jpg">					
-					</div>
-					<div class="PDcheck">
-						<div>腰鬆緊棉麻褲裙</div>
-						<br>
-						<div>03040047</div>
-						<br>
-						<div>顏色│白色</div>
-						<div>尺寸│M</div>
-					</div>
-				</div>
-				<div class="PDadd">
-					<div class="textOnlyM">數量</div>
-					<select class="itemCount">
-	　					<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-						<option value="7">7</option>
-						<option value="8">8</option>
-						<option value="9">9</option>
-					</select>
-				</div>
-				<div class="PDprice">
-					<div class="textOnlyM">單價</div>
-					<div>NT.590</div>
-				</div>
-				<div class="PDprice">
-					<div class="textOnlyM">小計</div>
-					<div>NT.590</div>
-				</div>
-				<div class="removeIcon">
-					<img id="removeImg" src="./images/cart-remove.png" width="40px">
-				</div>
-			</div>
-
-			<div class="buylistItem">
-				<div class="product">
-					<div class="pic">
-						<img class="productImg" src="./images/main.jpg">					
-					</div>
-					<div class="PDcheck">
-						<div>腰鬆緊棉麻褲裙</div>
-						<br>
-						<div>03040047</div>
-						<br>
-						<div>顏色│白色</div>
-						<div>尺寸│M</div>
-					</div>
-				</div>
-				<div class="PDadd">
-					<div class="textOnlyM">數量</div>
-					<select class="itemCount">
-	　					<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-						<option value="7">7</option>
-						<option value="8">8</option>
-						<option value="9">9</option>
-					</select>
-				</div>
-				<div class="PDprice">
-					<div class="textOnlyM">單價</div>
-					<div>NT.590</div>
-				</div>
-				<div class="PDprice">
-					<div class="textOnlyM">小計</div>
-					<div>NT.590</div>
-				</div>
-				<div class="removeIcon">
-					<img src="./images/cart-remove.png" width="40px">
-				</div>
-			</div>
-
-		</div>
-
 
 		<!-- 配送與付款 -->
 
@@ -262,7 +172,7 @@
 	<div class="stickybar">
 		<div class=cart-m>
 			<img class="stickybar-icon" src="./images/cart-mobile.png" width="32px">
-			<div id="inCartM" class="inCartM">0</div>
+			<div id="inCartM" class="inCartM" onclick="renderCart()">0</div>
 			<p class="stickybar-text">購物車</p>
 		</div>
 		<div class=member-m>
@@ -301,7 +211,7 @@
 
 		<div class="copyrightcontrol"> 
 			<div class="copyright">
-				<sapn>&copy; 2018. All rights resevered.</sapn>
+				<sapn>&copy; 2020. All rights resevered.</sapn>
 			</div>
 		</div>	
 

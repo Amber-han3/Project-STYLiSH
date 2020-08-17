@@ -1,5 +1,11 @@
 // product 頁使用的JS
 
+// 購物車按鈕
+
+function renderCart(){
+    location.href='cartPage.html'
+}
+
 // click切換為輸入搜尋
 
 // m search 點擊顯示輸入區塊 ※
@@ -8,7 +14,6 @@ const searchIM = document.getElementById("searchicon-m")
 searchIM.addEventListener('click', () => {
     document.getElementById('search-m').style.display = 'block';
 });
-
 
 //取得輸入值
     
@@ -21,7 +26,6 @@ function searchM(){
     const searchM = document.getElementById("search-m").value;
     console.log(searchM);
 };
-
 
 // 連接搜尋API
 

@@ -53,6 +53,11 @@ function searchM(){
 
 };
 
+// 購物車按鈕
+
+function renderCart(){
+    location.href='cartPage.html'
+}
 
 // 讀取local內項目個數用
 

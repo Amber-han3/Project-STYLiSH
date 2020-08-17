@@ -9,10 +9,7 @@
 
 </head>
 	
-
-
 <body>
-
 
 	<header>
 
@@ -21,7 +18,7 @@
 		<div class="headerL">
 
 			<!-- LOGO   -->
-			<div class="logoposition">
+			<div class="logoposition" onclick="location.href='index.html'">
 				<div class="logoimg"><img src="./images/logo.png" width="190px"></div>
 			</div> 
 
@@ -50,7 +47,7 @@
 					<input id="search-m" type="search" class="search-m" placeholder="搜尋"></input>
 				</div>
 				<div class="carticon topicon"><img src="./images/cart.png" height="30px" width="30px"></div>
-				<div id="inCart" class="inCart">0</div>
+				<div id="inCart" class="inCart" onclick="renderCart()">0</div>
 				<div class="membericon topicon"><img src="./images/member.png" width="30px"></div>
 			</div>
 		</div>
@@ -59,50 +56,46 @@
 
 </header>
 
-	<!-- BANNER區塊 -->
+<!-- BANNER區塊 -->
 
-	<div class="main-banner">
-		<div class="bannerline"></div>
-		<div id="banner" class="bannerimg">
-			<div id="bannerText" class="bannertext-all">
-			</div>
-		</div>
-
-		<!-- 圖片下方顯示目前在第幾張用的 -->
-		<div class="dotLine">
-			<div id="dotA" class="dotOff"></div>
-			<div id="dotB" class="dotOff"></div>
-			<div id="dotC" class="dotOff"></div>
-		</div>	
-	</div>
- 
-
-
-	<!-- 產品圖片區塊 m版兩張一排 PC三張一排-->
-
-	<div class="productposition">
-		<div id="container" class="productbody">
-	   
-			<div id="item" class="product">		
-			</div>
-
+<div class="main-banner">
+	<div class="bannerline"></div>
+	<div id="banner" class="bannerimg">
+		<div id="bannerText" class="bannertext-all">
 		</div>
 	</div>
+
+	<!-- 圖片下方顯示目前在第幾張用的 -->
+	<div class="dotLine">
+		<div id="dotA" class="dotOff"></div>
+		<div id="dotB" class="dotOff"></div>
+		<div id="dotC" class="dotOff"></div>
+	</div>	
+</div>
+
+<!-- 產品圖片區塊 m版兩張一排 PC三張一排-->
+
+<div class="productposition">
+	<div id="container" class="productbody">
+	
+		<div id="item" class="product"></div>
+
+	</div>
+</div>
 
 <!-- 懸浮置底 -->
 
-	<div class="stickybar">
-		<div class=cart-m>
-			<img class="stickybar-icon" src="./images/cart-mobile.png" width="32px">
-			<div id="inCartM" class="inCartM">0</div>
-			<p class="stickybar-text">購物車</p>
-		</div>
-		<div class=member-m>
-			<img class="stickybar-icon" src="./images/member-mobile.png" width="32px">
-			<p class="stickybar-text">會員</p>
-		</div>
+<div class="stickybar">
+	<div class=cart-m>
+		<img class="stickybar-icon" src="./images/cart-mobile.png" width="32px">
+		<div id="inCartM" class="inCartM" onclick="renderCart()">0</div>
+		<p class="stickybar-text">購物車</p>
 	</div>
-
+	<div class=member-m>
+		<img class="stickybar-icon" src="./images/member-mobile.png" width="32px">
+		<p class="stickybar-text">會員</p>
+	</div>
+</div>
 
 <footer id="footer" class="allfooter">
 	<div class="footeritem">
@@ -137,8 +130,6 @@
 		</div>	
 
 	</div>
-
-
 
 </footer>  
 

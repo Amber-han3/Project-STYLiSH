@@ -111,13 +111,16 @@ div a{
 /*本頁主要內容部分*/
 
 .cartContent{
-	display: flex;
+	/* display: flex; */
 	justify-content: center;
 	width: 100%;
 }
 
 .cartContentBox{
 	width: 900px;
+	justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*現在位置*/

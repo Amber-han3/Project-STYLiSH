@@ -322,6 +322,10 @@ div a{
 	margin: 20px 0px;
 }
 
+.addToCart:hover{
+	cursor: pointer;
+}
+
 /*產地跟材質說明*/
 
 .originText{

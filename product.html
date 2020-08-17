@@ -11,8 +11,6 @@
 	<link rel="stylesheet" href="./productRWD.css">
 
 </head>
-	
-<!-- index.js的東西之後記得接回來、搜尋相關再檢查一次 -->
 
 <body>
 
@@ -23,7 +21,7 @@
 		<div class="headerL">
 
 			<!-- LOGO   -->
-			<div class="logoposition">
+			<div class="logoposition" onclick="location.href='index.html'">
 				<div class="logoimg"><img src="./images/logo.png" width="190px"></div>
 			</div> 
 
@@ -52,7 +50,7 @@
 					<input id="search-m" type="search" class="search-m" placeholder="搜尋"></input>
 				</div>
 				<div class="carticon topicon"><img src="./images/cart.png" height="30px" width="30px"></div>
-				<div id="inCart" class="inCart">0</div>
+				<div id="inCart" class="inCart" onclick="renderCart()">0</div>
 				<div class="membericon topicon"><img src="./images/member.png" width="30px"></div>
 			</div>
 		</div>
@@ -84,7 +82,7 @@
 	<div class="stickybar">
 		<div class=cart-m>
 			<img class="stickybar-icon" src="./images/cart-mobile.png" width="32px">
-			<div id="inCartM" class="inCartM">0</div>
+			<div id="inCartM" class="inCartM" onclick="renderCart()">0</div>
 			<p class="stickybar-text">購物車</p>
 		</div>
 		<div class=member-m>

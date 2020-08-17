@@ -158,7 +158,7 @@ document.getElementById("women").addEventListener('click', () => {
 
     category="women" //用來更新外面全域變數的值，前面不可再宣告，不然會變成新變數
 
-    console.log("women內的category變數現在是"+category);
+    // console.log("women內的category變數現在是"+category);
 
     const srcWomen = "https://api.appworks-school.tw/api/1.0/products/women?paging="+0
 
@@ -246,6 +246,11 @@ function loadmore(src){
 
 };
 
+// 購物車按鈕
+
+function renderCart(){
+    location.href='cartPage.html'
+}
 
 // 從product頁面來的狀況
 
